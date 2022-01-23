@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/back_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:text="← Вернуться"
+                android:textColor="#00e"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="14dp"
+                android:text="Поля ввода"
+                android:textAlignment="center"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="2. Создать ещё один макет (если не получается, то проект) с несколькими EditText, где использовать атрибут inputType: text, textPersonName, phone, number, textPassword, textEmailAddress и другие значения.
+\n\n3. Добавить в проект элемент CalendarView.
+\n\n4. * Разобраться, что такое параметр ems."
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Укажите зачем Вы это заполняете"
+                android:inputType="text" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Пожалуйста, укажите Ваше имя"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Пожалуйста, укажите Ваш телефон"
+                android:inputType="phone" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Пожалуйста, укажите Вашу эл. почту"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Пожалуйста, укажите Ваш вес"
+                android:inputType="number" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="Основную суть Вашего обращения укажите в это поле"
+                android:inputType="textMultiLine"
+                android:lines="10" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="А теперь Ваш главный пароль"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="50dp"
+                android:paddingBottom="5dp"
+                android:text="А теперь - CalendarView, встречайте!"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minDate="12/15/2021" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingBottom="50dp"
+                android:text="4. * Разобраться, что такое параметр ems.
+\n\nПараметр ems задаёт ширину в количествах заглавной M (на латинице), так для поля ниже я указал ems=5 и теперь там должно было бы быть по пять M в каждую строку, независимо от указанного мною размера шрифта, но их почему-то шесть."
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:paddingBottom="50dp"
+                android:text="MMMMMMMMMMMMMMMMMMMMMMMMMMMMM"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
